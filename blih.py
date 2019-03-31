@@ -300,7 +300,7 @@ if __name__ == "__main__":
     if len(args) == 0:
         usage()
 
-    if args[0] == 'repository':
+    if args[0] == 'repository' or args[0] == 'repo':
         repository(args[1:], baseurl, user, token, verbose, user_agent)
     elif args[0] == 'sshkey':
         sshkey(args[1:], baseurl, user, token, verbose, user_agent)
