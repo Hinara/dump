@@ -135,6 +135,8 @@ packages_list=(boost-devel.x86_64
 
 dnf -y install ${packages_list[@]}
 
+git config --global url."git@git.epitech.eu:".insteadOf "epitech:"
+
 # PHP Runkit
 git clone https://github.com/runkit7/runkit7.git
 cd runkit7
